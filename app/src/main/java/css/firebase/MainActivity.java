@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 iItemRecycleViewAdapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
@@ -93,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 //myRef.setValue(item);
                 //myRef.child("CIS3334_ITEMS").push().setValue(item);
                 myRef.push().setValue(item);
-
-
 
             }
         });
